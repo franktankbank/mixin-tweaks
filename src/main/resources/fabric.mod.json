@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "A simple mod that adds a few QoL improvements using mixins.",
+  "authors": [
+    "franktankbank"
+  ],
+  "contact": {
+    "homepage": "https://github.com/franktankbank",
+    "sources": "https://github.com/franktankbank/mixin-tweaks",
+    "issues": "https://github.com/franktankbank/mixin-tweaks/issues"
+  },
+  "license": "GPL-3.0-only",
+  "icon": {
+    "128": "assets/mixin-tweaks/icon-128.png",
+    "256": "assets/mixin-tweaks/icon-256.png",
+    "512": "assets/mixin-tweaks/icon-512.png"
+  },
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "org.franktankbank.MixinTweaks"
+    ],
+    "modmenu": [
+      "org.franktankbank.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "mixin-tweaks.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17",
+    "fabric-api": ">=0.152.1+26.1.2",
+    "yet_another_config_lib_v3": ">=3.9.4",
+    "modmenu": ">=18.0.0-beta.1",
+    "minecraft": "${minecraft}"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/mod/mixin-tweaks"
+      },
+      "update_checker": true
+    }
+  }
+}
