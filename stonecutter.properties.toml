@@ -1,0 +1,24 @@
+# See https://stonecutter.kikugie.dev/wiki/config/properties#centralized-properties
+mod.id = "mixin-tweaks"
+mod.name = "Mixin Tweaks"
+mod.group = "org.franktankbank"
+mod.version = "0.1.0"
+
+deps.fabric_loader = "0.19.3"
+loomx.loom_version = "1.17-SNAPSHOT"
+
+["26.1.x"]
+mod.mc_compat = "~26.1"
+mod.mc_releases = ["26.1"]
+
+deps.fabric_api = "0.152.1+26.1.2"
+deps.yacl_version = "3.9.4+26.1-fabric"
+deps.modmenu_version = "18.0.0-beta.1"
+
+["26.2.x"]
+mod.mc_compat = "~26.2"
+mod.mc_releases = ["26.2"]
+
+deps.fabric_api = "0.152.2+26.2"
+deps.yacl_version = "3.9.4+26.2-fabric"
+deps.modmenu_version = "20.0.0-beta.4"
